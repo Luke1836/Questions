@@ -19,18 +19,18 @@ questions.forEach(function (question) {
 
 const questions = document.querySelectorAll(".question");
 
-questions.forEach(function (question) {
+questions.forEach((question) => {
   const plusBtn = question.querySelector("#plus"); 
   const minusBtn = question.querySelector("#minus"); 
   const answer = question.querySelector(".answer");
 
-  plusBtn.addEventListener("click", function () {
+  plusBtn.addEventListener("click", () => {
     answer.style.display = "block";
     plusBtn.style.display = "none";
     minusBtn.style.display = "inline-block";
   });
 
-  minusBtn.addEventListener("click", function () {
+  minusBtn.addEventListener("click", () => {
     answer.style.display = "none";
     minusBtn.style.display = "none";
     plusBtn.style.display = "inline-block";
