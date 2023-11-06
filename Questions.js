@@ -17,12 +17,12 @@ questions.forEach(function (question) {
   });
 }); */
 
-const questions = document.querySelectorAll(".question-btn");
+const questions = document.querySelectorAll(".question");
 
 questions.forEach(function (question) {
   const plusBtn = question.querySelector("#plus"); 
   const minusBtn = question.querySelector("#minus"); 
-  const answer = question.nextElementSibling;
+  const answer = question.querySelector(".answer");
 
   plusBtn.addEventListener("click", function () {
     answer.style.display = "block";
