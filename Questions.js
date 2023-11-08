@@ -1,38 +1,37 @@
-/* const questions = document.querySelectorAll(".question");
+/* 
+const questions = document.getElementById('question');
+const minusBtn = document.querySelector('.minus');
+const plusBtn = document.querySelector('.plus');
+const ans = document.querySelector('.answer');
 
-questions.forEach(function (question) {
-  const btn = question.querySelector(".question-btn");
-  // console.log(btn);
+plusBtn.addEventListener('click', () => {
+  plusBtn.style.display = 'none';
+  minusBtn.style.display = 'inline-block';
+  ans.style.display = 'block';
+});
 
-  btn.addEventListener("click", function () {
-     console.log(question);
-
-    questions.forEach(function (item) {
-      if (item !== question) {
-        item.classList.remove("show-text");
-      }
-    });
-
-    question.classList.toggle("show-text");
-  });
+minusBtn.addEventListener('click', () => {
+  plusBtn.style.display = 'inline-block';
+  minusBtn.style.display = 'none';
+  ans.style.display = 'none';
 }); */
-
-const questions = document.querySelectorAll(".question");
+const questions = document.querySelectorAll('.question');
 
 questions.forEach((question) => {
-  const plusBtn = question.querySelector("#plus"); 
-  const minusBtn = question.querySelector("#minus"); 
-  const answer = question.querySelector(".answer");
+  const plusBtn = question.querySelector('.plus');
+  const minusBtn = question.querySelector('.minus');
+  const answer = question.querySelector('.answer');
 
-  plusBtn.addEventListener("click", () => {
-    answer.style.display = "block";
-    plusBtn.style.display = "none";
-    minusBtn.style.display = "inline-block";
+  plusBtn.addEventListener('click', () => {
+    answer.style.display = 'block';
+    plusBtn.style.display = 'none';
+    minusBtn.style.display = 'inline-block';
   });
 
-  minusBtn.addEventListener("click", () => {
-    answer.style.display = "none";
-    minusBtn.style.display = "none";
-    plusBtn.style.display = "inline-block";
+  minusBtn.addEventListener('click', () => {
+    answer.style.display = 'none';
+    plusBtn.style.display = 'inline-block';
+    minusBtn.style.display = 'none';
   });
 });
+

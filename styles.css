@@ -31,6 +31,7 @@ button {
     background: transparent;
     font-size: 1.5rem; 
     padding: 0.5rem 1rem;
+    transform: rotate(90deg);
 }
 
 /* GENERAL STYLES */
@@ -96,8 +97,25 @@ body {
     display: none;
 }
 
-#minus {
+.minus {
     display: none;
 }
+
+/* HIDE THE TEXT */
+/* .answer {
+    display: none;
+}
+  .show-text .answer {
+    display: block;
+  }
+  .minus {
+    display: none;
+}
+  .show-text .minus {
+    display: inline;
+  }
+  .show-text .plus {
+    display: none;
+  } */
 
 
