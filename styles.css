@@ -31,7 +31,6 @@ button {
     background: transparent;
     font-size: 1.5rem; 
     padding: 0.5rem 1rem;
-    transform: rotate(90deg);
 }
 
 /* GENERAL STYLES */
@@ -94,28 +93,34 @@ body {
 .answer {
     margin-bottom: var(--margin-md);
     margin-top: var(--margin-md);
-    display: none;
 }
 
+button:hover {
+    animation: King 0.4s ease-in 0s forwards;
+}
+@keyframes King {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
 .minus {
     display: none;
 }
 
-/* HIDE THE TEXT */
-/* .answer {
+.qn-ans {
     display: none;
 }
-  .show-text .answer {
-    display: block;
-  }
-  .minus {
-    display: none;
+
+.active {
+    display: inline-block;
 }
-  .show-text .minus {
-    display: inline;
-  }
-  .show-text .plus {
-    display: none;
-  } */
+
+
+
+
+
 
 
