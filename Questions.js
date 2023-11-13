@@ -2,17 +2,25 @@
 const questions = document.querySelectorAll('.question');
 
 questions.forEach((question) => {
-  const btn = document.querySelector('.question-btn');
+  const btn = question.querySelector('.btn');
+  const  icons = question.querySelector(".question-btn");
   const ans = question.querySelector('.qn-ans');
+  const plusIcon = question.querySelector('#plus');
+  const minusIcon = question.querySelector('#minus'); 
   btn.addEventListener('click', () => {
     console.log("Luke");
-    questions.forEach((item) => {
+    /* questions.forEach((item) => {
       if(item !== question)
       {
-        item.classList.remove("active");
+        ans.classList.remove("active");
+        minusIcon.classList.remove("active");
+        plusIcon.classList.add("active");
       }
-    });
-    question.classList.toggle("active");
+    }); */
+    ans.classList.toggle("active");
+    plusIcon.classList.toggle("active");
+    minusIcon.classList.toggle("active");    
+
   }) 
 });
 
