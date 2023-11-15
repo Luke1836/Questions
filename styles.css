@@ -118,7 +118,9 @@ button:hover {
     display: inline-block;
 }
 
-
+.inactive {
+    display: none;
+}
 
 
 

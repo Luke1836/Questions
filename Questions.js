@@ -8,17 +8,17 @@ questions.forEach((question) => {
   const plusIcon = question.querySelector('#plus');
   const minusIcon = question.querySelector('#minus'); 
   btn.addEventListener('click', () => {
-    console.log("Luke");
-    /* questions.forEach((item) => {
-      if(item !== question)
-      {
-        ans.classList.remove("active");
-        minusIcon.classList.remove("active");
-        plusIcon.classList.add("active");
+    
+    questions.forEach((item) => {
+      if (item !== question) {
+        item.classList.remove("active");
+        item.querySelector('.qn-ans').classList.remove("active");
+        item.querySelector('#plus').classList.remove("inactive");
+        item.querySelector('#minus').classList.remove("active");
       }
-    }); */
+    });
     ans.classList.toggle("active");
-    plusIcon.classList.toggle("active");
+    plusIcon.classList.toggle("inactive");
     minusIcon.classList.toggle("active");    
 
   }) 
